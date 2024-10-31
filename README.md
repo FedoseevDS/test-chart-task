@@ -10,4 +10,5 @@
 
 история веток:  
 
-test-chart-task-1 - подготовка проекта к работе
+test-chart-task-1 - подготовка проекта к работе  
+test-chart-task-2 - установка eslint, prettier, react-router-dom, @types/node, sass, normalize.css
