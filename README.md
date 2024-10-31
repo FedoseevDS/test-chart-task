@@ -1,50 +1,13 @@
-# React + TypeScript + Vite
+Тестовое задание 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Необходимо реализовать график, отображающий взаимосвязь между компетенциями и связанными навыками. На внешнем кольце отображаются   навыки, на внутреннем - компетенции. При нажатии на компетенцию, отображаются линии, соединяющие её со связанными навыками. Линии   основных навыков (mainSkills) - оранжевые, дополнительных (otherSkills) - фиолетовые.  
 
-Currently, two official plugins are available:
+Дополнительно:  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. реализовать возможность выбора навыка, и отображения всех связанных с ним компетенций.  
+2. при выборе компетенции, соответствующие навыки должны располагаться как можно ближе, чтобы исключить длинных пересекающихся   между собой линий  
+3. реализовать анимацию плавной отрисовки соединительных линий
 
-## Expanding the ESLint configuration
+история веток:  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+test-chart-task-1 - подготовка проекта к работе
